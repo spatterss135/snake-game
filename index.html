@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="container-1">
+    <div class="container-2">
+        <div class="score">Score: <br><br><div id='change-score'> 0</div></div> 
+        <div class='button' id="play-again">Play<span id='thickboi'>A</span>gain</div>
+    </div>
+    <div class="container-3">
+        <div id="gameboard"></div>
+        <div id="lose-message">YOU LOSE</div>
+        <div id="difficulties">
+            <span class ='difficulty-button button' id="easy">Easy</span>
+            <span class ='difficulty-button button' id="medium">Medium</span>
+            <span class ='difficulty-button button' id="hard">Hard</span>
+        </div>
+    </div>
+    
+    <div class="highscore-container">
+        <h2>High Scores</h2>
+        <div id="easy-score">Easy: <span id='change-easy'> 0</span></div>
+        <div id="medium-score">Medium: <span id='change-medium'> 0</span></div>
+        <div id="hard-score">Hard: <span id='change-hard'> 0</span></div>
+    </div>
+
+    </div>
+
+    
+    <script src="./index.js" defer  type='module'></script>
+    <script src="./food.js" defer  type='module'></script>
+    <script src="./snake.js" defer  type='module'></script>
+</body>
+</html>
